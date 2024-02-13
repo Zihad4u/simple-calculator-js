@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>geometry</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4  ">
+  <input type="checkbox" value="synthwave" class="toggle theme-controller" />
+  <header>
+
+  </header>
+  <main>
+    <div class="flex flex-col md:flex-row">
+      <!-- geometry container -->
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+        <!-- Triangle -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Triangle</h2>
+            <p class="">Area (A) =0.5 x b x h</p>
+            <div>
+              <input id="input-1" class="w-24 text-2xl p-2 rounded-sm " type="text" placeholder="b">
+              <span class="ml-1 mr-1">cm</span>
+              <input id="input-2" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+              <span>cm</span>
+            </div>
+            <div>
+              <p class="text-2xl">Answer: <span id="triangle-area"></span></p>
+            </div>
+            <div class="card-actions">
+              <button onclick="calculateTriangle()" class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Rectangle -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/rectangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Rectangle</h2>
+            <p>Area (A) = w x I</p>
+            <div>
+              <input id="input-3" class="w-24 text-2xl p-2 rounded-sm " type="text" placeholder="W">
+              <span class="ml-1 mr-1">W</span>
+              <input id="input-4" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="I">
+              <span>I</span>
+            </div>
+            <div>
+              <p class="text-2xl">Answer: <span id="rectangle-area"></span></p>
+            </div>
+            <div class="card-actions ">
+              <button onclick="calculateRectangle()" class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Parallelogram -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/parallelogram.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Parallelogram</h2>
+            <p>Area (A) = b x h</p>
+            <div>
+              <input id="input-5" class="w-24 text-2xl p-2 rounded-sm " type="text" placeholder="b">
+              <span class="ml-1 mr-1">W</span>
+              <input id="input-6" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+              <span>I</span>
+            </div>
+            <div>
+              <p class="text-2xl">Answer: <span id="nika"></span></p>
+            </div>
+            <div class="card-actions justify-end">
+              <button onclick="answer()" class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Rhombus -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/rhombus.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Rhombus</h2>
+            <p>Area (A) = o.5 x A x B</p>
+            <div>
+              <input id="input-7" class="w-24 text-2xl p-2 rounded-sm " type="text" placeholder="A">
+              <span class="ml-1 mr-1">W</span>
+              <input id="input-8" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="B">
+              <span>I</span>
+            </div>
+            <div>
+              <p class="text-2xl">Answer: <span id="rhombus"></span></p>
+            </div>
+            <div class="card-actions justify-end">
+              <button onclick="touch()" class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- area calculator -->
+      <div class="w-96 border-2 border-red-600">
+        <h3 class="text-3xl text-center">area calculator</h3>
+        <p class="text-center" >coming soon</p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
